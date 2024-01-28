@@ -489,7 +489,7 @@ boolean FtpServer::processCommand()
 					// } else {
 						String fn, fs;
 						fn = file.name();
-						fn.remove(0, 1);
+						//fn.remove(0, 1);		//Comment out because the first character of the file name disappears.
 						fs = String(file.size());
 						data.println( "Type=file;Size=" + fs + ";"+"modify=20000101160656;" +" " + fn);
 						nm ++;
